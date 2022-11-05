@@ -1,3 +1,2 @@
-# course-id-course-materials
 # Study materials and source code for **Droidcon Academy** course 
-> # Add Course Name 
+> # Adding Dark Theme to an Android App with Jetpack Compose
