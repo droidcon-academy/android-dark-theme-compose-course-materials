@@ -1,4 +1,4 @@
-package com.droidcon
+package com.droidcon.borrow
 
 import android.app.Application
 import com.droidcon.borrow.di.appModules
