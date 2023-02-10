@@ -10,7 +10,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.droidcon.borrow.navigation.AppNavigation
 import com.droidcon.borrow.ui.theme.BorrowTheme
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
-import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
+
 
 @OptIn(ExperimentalAnimationApi::class)
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
     setContent {
       val navController = rememberAnimatedNavController()
-      val borrowViewModel: BorrowViewModel by inject()
+      val borrowViewModel: BorrowViewModel by viewModel()
 
       BorrowTheme {
         AppNavigation(navController = navController, viewModel = borrowViewModel)

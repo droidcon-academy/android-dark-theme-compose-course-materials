@@ -48,3 +48,13 @@ fun BorrowedItemRow(item: BorrowItem) {
     }
   }
 }
+
+/**
+ * Add a regular preview using the default theme - which is a
+ * light theme
+ */
+
+/**
+ * Preview the Composable using the dark theme colors of the
+ * BorrowTheme theme
+ */

@@ -51,8 +51,14 @@ fun AddItemForm(borrowViewModel: BorrowViewModel, navController: NavController, 
       .background(color = Color(0xFFFFFBFE))
       .padding(paddingValues)
   ) {
-    InputText(label = "Enter item name", onTextChange = { borrowViewModel.itemName = it })
-    InputText(label = "Enter borrowerName", onTextChange = { borrowViewModel.borrowerName = it } )
+    InputText(
+      label = "Enter item name",
+      requestFocus = true,
+      onTextChange = { borrowViewModel.itemName = it })
+    InputText(
+      label = "Enter borrower name",
+      onTextChange = { borrowViewModel.borrowerName = it }
+    )
     DatePicker(datePicked = dateSelected, updatedDate = updateDate, activity = activity , viewModel = borrowViewModel)
     SaveButton(viewModel = borrowViewModel, navController = navController)
   }
